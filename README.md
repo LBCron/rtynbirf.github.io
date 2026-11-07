@@ -1,5 +1,8 @@
 # ЛАКОРНИЯ · MEGA-PLAYER SINGULYAR
 
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE) [![PWA](https://img.shields.io/badge/PWA-offline%20mode-8A2BE2)](https://rtynbirf.github.io/) [![P2P](https://img.shields.io/badge/streaming-WebTorrent-00b8d9)](https://rtynbirf.github.io/) [![▶ Live](https://img.shields.io/badge/%E2%96%B6_open-lacornia-success)](https://rtynbirf.github.io/)
+
 Одностраничный PWA-плеер сайта-профиля `rtynbirf.github.io`: универсальный
 автопилот-видеоплеер с офлайн-режимом.
 
