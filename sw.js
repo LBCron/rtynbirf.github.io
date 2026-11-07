@@ -1,8 +1,8 @@
 /* ЛАКОРНИЯ · МЕГАМЕТАПЛЕЕР — сервис-воркер такта M5 «МАГНЕТИЗМ».
    Задача: «Соединение сброшено» больше не отшибает дверь —
    сборка живёт в кэше; при живой сети тихо обновляется фоном. */
-const VER = "lakornia-m5-2026-10-25";
-const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./vendor/webtorrent.min.js"];
+const VER = "lakornia-m5-2026-11-07-selfhost";
+const SHELL = ["./", "./index.html", "./manifest.webmanifest", "./icon-192.png", "./icon-512.png", "./vendor/webtorrent.min.js", "./vendor/hls.min.js"];
 
 self.addEventListener("install", e => {
   e.waitUntil(
@@ -20,7 +20,7 @@ self.addEventListener("activate", e => {
 });
 
 /* Переводчики и P2P-статистика кэшу не подлежат — только сеть */
-const NET_ONLY = /mymemory\.translated\.net|translate\.googleapis\.com|\/api\/torrent|\/api\/nnm/i;
+const NET_ONLY = /\/api\/torrent|\/api\/nnm/i;
 
 self.addEventListener("fetch", e => {
   const req = e.request;
